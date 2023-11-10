@@ -1,30 +1,52 @@
 ---
-name: case scope
-brief: TODO
-full: TODO
+# TODO: Note about Appositive/Associative/Relational cases
+name: case-scope
+brief: the case’s scope over adjacent formatives
+full: |
+  CASE-SCOPE is used in formatives marked with [[Case]] to explicitly indicate
+  the case's scope or “reach” over other formatives in the same sentence,
+  overriding the default rules established by the syntax.
 values:
-  - abbr: CCw
-    name: CCw
-    brief: TODO
-    full: TODO
-  - abbr: CCm
-    name: CCm
-    brief: TODO
-    full: TODO
-  - abbr: CCy
-    name: CCy
-    brief: TODO
-    full: TODO
-  - abbr: CCn
-    name: CCn
-    brief: TODO
-    full: TODO
-  - abbr: CCl
-    name: CCl
-    brief: TODO
-    full: TODO
-  - abbr: CCx
-    name: CCx
-    brief: TODO
-    full: TODO
+  - abbr: CCN
+    name: natural
+    brief: case is governed by the main verb or an Antecedent formative
+    full: |
+      NATURAL Case-Scope indicates that the case of the formative is governed
+      by another formative in the [[Antecedent]] Case-Scope or, naturally, by
+      the main verb of the clause if the former does not exist.
+  - abbr: CCA
+    name: antecedent
+    brief: formative governs all Natural formatives
+    full: |
+      ANTECEDENT Case-Scope indicates that the formative is the “head”, which
+      governs all other formatives in the clause whose Case-Scope is the
+      [[Natural]], overriding the main verb.
+  - abbr: CCS
+    name: subaltern
+    brief: formative governs all Qualifier formatives
+    full: |
+      SUBALTERN Case-Scope indicates that the formative governs all other
+      formatives in the clause whose Case-Scope is the [[Qualifier]],
+      providing a mechanism secondary to [[Antecedent]]–[[Natural]].
+  - abbr: CCQ
+    name: qualifier
+    brief: case is governed by a Subaltern formative
+    full: |
+      QUALIFIER Case-Scope indicates that the case of the formative is
+      governed by another formative in the [[Subaltern]] case-scope,
+      providing a mechanism secondary to [[Natural]]–[[Antecedent]].
+  - abbr: CCP
+    name: precedent
+    brief: case is governed by the following formative
+    full: |
+      PRECEDENT Case-Scope indicates that the case of the formative is
+      governed by an immediately following formative in the clause,
+      which does not need to be marked for Case-Scope.
+  - abbr: CCV
+    name: successive
+    brief: case is governed by the previous formative
+    full: |
+      SUCCESSIVE Case-Scope indicates that the case of the formative is
+      governed by an immediately preceding formative in the clause, which
+      does not need to be marked for Case-Scope.
 ...
