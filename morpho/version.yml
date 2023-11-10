@@ -1,14 +1,22 @@
 ---
 name: version
-brief: goal-driven vs. process-driven
-full: TODO
+brief: whether an action or event is goal-oriented
+full: |
+  VERSION indicates a property equivalent to the concept of telicity, which
+  indicates whether the focus of an action or event lies on it as having an
+  endpoint, goal, or final result.
 values:
   - abbr: PRC
     name: processual
-    brief: state or action that is an end in itself
-    full: TODO
+    brief: state or action that is not goal-oriented
+    full: |
+      PROCESSUAL Version indicates that the state, entity, or action being
+      described is not oriented towards a goal or final result, but is
+      instead an end in and of itself.
   - abbr: CPT
     name: completive
-    brief: goal-driven state or action
-    full: TODO
+    brief: action or event that is goal-oriented
+    full: |
+      COMPLETIVE Version indicates that the action or event being described
+      achieves or is intended to achieve some purpose or outcome.
 ...
